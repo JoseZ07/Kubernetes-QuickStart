@@ -8,7 +8,7 @@
 Kubernetes is an open-source platform for managing containerized workloads and service. Azure Kubernetes Service (AKS) makes it simple to deploy and manage a cluster of virtual machines that are running Kubernetes. To get started with AKS, you'll first need to create a new AKS cluster using the Azure Portal or Azure CLI. Once the cluster is up and running, you can deploy and manage your applications using Kubernetes commands and tools. The AKS documentation provides detailed instructions on how to create a new cluster, as well as how to deploy and manage your applications. With AKS, you can easily scale your applications yo meet demand and ensure high availability.
 
 What we'll do:
-* Spin up two public front-end services as container for users to interact with.
+* Spin up two public front-end services as containers for users to interact with.
 * Spin up a PostgreSQL and Redis data store as a container to handle data movement from one FE service to another.
 * Spin up a dotnet worker service to handle transferring data from our PostgreSQL database to Redis.
 
