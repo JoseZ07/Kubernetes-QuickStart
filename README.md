@@ -47,7 +47,7 @@ _Once you have created an Azure account, you will want to follow these commands 
    ```sh
    az aks create -g "$RG" -n "$AKSCluster" --node-count 2 --generate-ssh-keys
    ```
-3. Install Kubectl Utility
+3. Install Kubectl utility
    ```sh
    sudo apt update
    curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo tee /usr/share/keyrings/kubernetes.gpg
