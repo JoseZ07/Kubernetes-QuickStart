@@ -5,12 +5,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Kubernetes is an open-source platform for managing containerized workloads and service. Azure Kubernetes Service (AKS) makes it simple to deploy and manage a cluster of virtual machines that are running Kubernetes. To get started with AKS, you'll first need to create a new AKS cluster using the Azure Portal or Azure CLI. Once the cluster is up and running, you can deploy and manage your applications using Kubernetes commands and tools. The AKS documentation provides detailed instructions on how to create a new cluster, as well as how to deploy and manage your applications. With AKS, you can easily scale your applications yo meet demand and ensure high availability.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+What we'll do:
+* Spin up two public front-end services as container for users to interact with.
+* Spin up a PostgreSQL and Redis data store as a container to handle data movement from one FE service to another.
+* Spin up a dotnet worker service to handle transferring data from our PostgreSQL database to Redis.
 
 ### Built With
 
