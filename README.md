@@ -31,24 +31,30 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You will need an Azure account, you can create a free Azure account with a $200 credit at [https://www.azure.microsoft.com/free](https://azure.microsoft.com/en-us/free/search/?OCID=AIDcmm5edswduu_SEM_8f2b03ad4bfd15c5099060679d974953:G:s&ef_id=8f2b03ad4bfd15c5099060679d974953:G:s&msclkid=8f2b03ad4bfd15c5099060679d974953)
+
+You will also need Ubuntu [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Once you have created an Azure account, you will want to follow these commands in order to create your Azure Kubernetes Service cluster._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Login through the AZ CLI
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   az login
    ```
-3. Install NPM packages
+2. Create an AKS cluster
    ```sh
-   npm install
+   az aks create -g "$RG" -n "$AKSCluster" --node-count 2 --generate-ssh-keys
+   ```
+3. Install Kubectl Utility
+   ```sh
+   sudo apt update
+   curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo tee /usr/share/keyrings/kubernetes.gpg
+   echo "deb [arch=amd64 signed-by=/usr/share/keyrings/kubernetes.gpg] http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list
+   sudo apt-mark hold kubeadm kubelet kubectl
+   sudo apt install kubeadm kubelet kubectl
+   kubeadm version
    ```
 4. Enter your API in `config.js`
    ```js
