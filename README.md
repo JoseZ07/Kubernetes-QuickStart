@@ -56,9 +56,13 @@ _Once you have created an Azure account, you will want to follow these commands 
    sudo apt install kubeadm kubelet kubectl
    kubeadm version
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Connect to your AKS cluster
+   ```sh
+   az aks get-credentials -g "$RG" -n "$AKSCluster"
+   ```
+5. Verify your connection
+   ```sh
+   kubectl get all
    ```
 
 <!-- LICENSE -->
