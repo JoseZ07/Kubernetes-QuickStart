@@ -2,6 +2,9 @@
 
 ![Kubernetes](Images/Transparent.png)
 
+## Full Cluster Design
+![Kubernetes](Images/ServiceDesignScale.png)
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
