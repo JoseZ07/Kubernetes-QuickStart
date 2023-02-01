@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 You will need an Azure account, you can create a free Azure account with a $200 credit at [https://www.azure.microsoft.com/free](https://azure.microsoft.com/en-us/free/search/?OCID=AIDcmm5edswduu_SEM_8f2b03ad4bfd15c5099060679d974953:G:s&ef_id=8f2b03ad4bfd15c5099060679d974953:G:s&msclkid=8f2b03ad4bfd15c5099060679d974953)
 
-You will also need Ubuntu [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
+You will also need Ubuntu / WSL [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 ### Installation
 
